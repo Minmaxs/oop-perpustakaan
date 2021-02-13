@@ -1,0 +1,34 @@
+<!-- Code by Kelas Programmer
+Author: Setiawan Dimas Arimurti
+Author URL: https://kelasprogrammer.com
+License: Creative Commons Atribusi-NonKomersial 4.0 Internasional
+License URL: http://creativecommons.org/licenses/by-nc/4.0/
+-->
+<html>
+<head>
+   <title>SHIRONOKURO | TAMBAH BUKU </title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+   <div class="container">
+      <div class="col-sm-5">
+      <h2>Tambah Data Buku</h2>
+         <form action="{{ url_for('tambahbuku') }}" method="POST">
+            <div class="form-group">
+               <label>JUDUL BUKU :</label>
+               <input type="text" name="JUDUL" class="form-control" placeholder="Masukan Judul Buku" required />
+            </div>
+            <div class="form-group">
+               <label>PENGARANG :</label>
+               <input type="text" name="PENGARANG" class="form-control" placeholder="Masukan Nama Pengarang Buku" required />
+            </div>
+            <div class="form-group">
+               <label>TAHUN TERBIT:</label>
+               <input type="date" name="TAHUN_TERBIT" class="form-control" placeholder="Masukan stok" required />
+            </div>
+            <button type="submit" id="Submit" name="submit" class="btn btn-primary">OK</button>
+      </form>
+   </div>
+</div>
+</body>
+</html>
